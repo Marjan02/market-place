@@ -459,6 +459,7 @@ li > a {
 
   .product-img {
     margin: 0;
+    margin-bottom: 15px;
     width: 400px;
     height: 100%;
   }
