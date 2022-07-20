@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Market Place</title>
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <div class="left">
+          <div class="product-img">
+            <img class="big-img" src="images/plants.png" alt="" />
+            <img class="small-img" src="images/bottom-plants.png" alt="" />
+          </div>
+          <div class="product-main">
+            <h1>Eriocaulon Cinereum High Quality Aquatic Plants</h1>
+            <div class="rating">
+              <img src="images/star.svg" alt="" /><span>4.5</span>
+            </div>
+            <hr />
+            <div class="price">
+              <span class="span-one">$30</span>
+              <span class="span-two">/Plant</span>
+            </div>
+            <h3>Your Order</h3>
+            <div class="order-plant">
+              <div class="order-button">
+                <a id="subtraction" onclick="">-</a>
+                <hr />
+                <span id="number-of-products"> 0 </span>
+                <hr />
+                <a id="increase" onclick="increaseNumber()">+</a>
+              </div>
+              <p>Plant</p>
+            </div>
+            <p>Min. order : 1 Plant</p>
+            <div class="variant">
+              <h3>Variant</h3>
+              <select name="" id="">
+                <option value="" selected>Variant</option>
+                <option value="Red">Red</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="product-summary">
+          <div class="h1">
+            <h1>Summary</h1>
+            <hr />
+          </div>
+          <div class="total">
+            <div class="your-order">
+              <h3>Your Order</h3>
+              <p><span>0</span> Plant</p>
+            </div>
+            <div class="your-price">
+              <h3>Price</h3>
+              <p><span>$</span> 0</p>
+            </div>
+          </div>
+          <button><img src="images/cart.svg" alt="" />Add To Cart</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="detail-title">
+          <ul>
+            <li class="active">
+              <a href="#">Detail Product</a>
+              <hr />
+            </li>
+            <li>
+              <a href="#">Shipping</a>
+              <hr />
+            </li>
+            <li>
+              <a href="#">Review</a>
+              <hr />
+            </li>
+          </ul>
+          <hr />
+        </div>
+        <article>
+          <div class="tags">
+            <h3>
+              Plant Name :
+              <a href="https://en.wikipedia.org/wiki/Aquatic_plant"
+                >Aquatic Plants</a
+              >
+            </h3>
+            <h3>
+              Varietas Name :
+              <a
+                href="https://tropica.com/en/plants/plantdetails/Eriocauloncinereum(091TC)/19547"
+                >Eriocaulon Cinereum High Quality Aquatic Plants</a
+              >
+            </h3>
+          </div>
+          <div class="description">
+            <h3>Description :</h3>
+            <p>
+              This plant can survive in water, and does not need to be watered.
+              This plant can survive in water, and does not need to be watered.
+              This plant can survive in water, and does not need to be watered.
+              This plant can survive in water, and does not need to be watered.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
