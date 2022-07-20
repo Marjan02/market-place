@@ -1,13 +1,34 @@
-const subtraction = document.getElementById("subtraction");
-const increase = document.getElementById("increase");
-const numberOfProducts = document.getElementById("number-of-products");
+var splide = new Splide("#main-slider", {
+  width: 600,
+  height: 300,
+  pagination: false,
+  cover: true,
+});
 
-function increaseNumber() {
-  
+var thumbnails = document.getElementsByClassName("thumbnail");
+var current;
+
+for (var i = 0; i < thumbnails.length; i++) {
+  initThumbnail(thumbnails[i], i);
 }
 
-function substractNumber() {
-  numberOfProducts.value = parseInt(numberOfProducts.value) - 1;
+function initThumbnail(thumbnail, index) {
+  thumbnail.addEventListener("click", function () {
+    splide.go(index);
+  });
 }
 
-console.log("ahok")
+splide.on("mounted move", function () {
+  var thumbnail = thumbnails[splide.index];
+
+  if (thumbnail) {
+    if (current) {
+      current.classList.remove("is-active");
+    }
+
+    thumbnail.classList.add("is-active");
+    current = thumbnail;
+  }
+});
+
+splide.mount();

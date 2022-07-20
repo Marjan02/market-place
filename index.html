@@ -6,14 +6,82 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Market Place</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+    ></script>
   </head>
   <body>
     <main>
       <div class="top">
         <div class="left">
           <div class="product-img">
-            <img class="big-img" src="images/plants.png" alt="" />
-            <img class="small-img" src="images/bottom-plants.png" alt="" />
+            <section
+              id="main-slider"
+              class="splide"
+              aria-label="My Awesome Gallery"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img
+                      src="https://source.unsplash.com/random/1000x1000?sig=1"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="https://source.unsplash.com/random/1000x1000?sig=2"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="https://source.unsplash.com/random/1000x1000?sig=3"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="https://source.unsplash.com/random/1000x1000?sig=4"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <ul id="thumbnails" class="thumbnails">
+              <li class="thumbnail">
+                <img
+                  src="https://source.unsplash.com/random/1000x1000?sig=1"
+                  alt=""
+                />
+              </li>
+              <li class="thumbnail">
+                <img
+                  src="https://source.unsplash.com/random/1000x1000?sig=2"
+                  alt=""
+                />
+              </li>
+              <li class="thumbnail">
+                <img
+                  src="https://source.unsplash.com/random/1000x1000?sig=3"
+                  alt=""
+                />
+              </li>
+              <li class="thumbnail">
+                <img
+                  src="https://source.unsplash.com/random/1000x1000?sig=4"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
           <div class="product-main">
             <h1>Eriocaulon Cinereum High Quality Aquatic Plants</h1>
